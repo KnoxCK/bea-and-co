@@ -1,5 +1,5 @@
-.image-interval-blog {
-	filter: brightness(70%);
+.image-blog {
+	background-image: linear-gradient(-100deg, rgba(0,10,50,0.1) 0%, rgba(0,36,61,0.6) 70%), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474460052/Boy_and_plane_Image_ac1sjn.jpg');
 	height: calc(100vh);
   	background-size: cover !important;
   	display: flex;
@@ -9,14 +9,14 @@
 }
 .blog-banner-content {
 	position: absolute;
-  	top: 180px;
+  	top: 240px;
   	left: 40px;
   	h1 {
   		font-family: Oswald, "Helvetica Neue", Helvetica, Arial, sans-serif;
   		padding: 8px 12px;
     	border: 3px solid rgb(255, 255, 255);
 		font-size: 60px;
-		font-weight: lighter;
+		font-weight: bold;
   		color: white;
   		text-transform: uppercase;
   	}
@@ -28,6 +28,9 @@
 		font-size: 16px;
 		font-weight: lighter;
   		color: white;
+  	}
+  	span {
+  		color: #8FF0E8;
   	}
 }
 .blog-posts {
