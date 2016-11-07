@@ -4,7 +4,12 @@ class PagesController < ApplicationController
   def home
     @first_par = FirstParagraph.first
     @story_pars = StoryParagraph.all
+    @services_par = ServiceParagraph.all
+    @team_row_one = TeamRow.first
+
+    @team_row_one = TeamRow.last
   end
+
 
   def chaperone
   end
