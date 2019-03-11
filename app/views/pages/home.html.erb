@@ -56,36 +56,36 @@
 <div class="our-services-banner" id="services" style="background-image: linear-gradient(
       rgba(0, 0, 0, 0.75),
       rgba(0, 0, 0, 0.75)), url('http://res.cloudinary.com/ddota4fci/image/upload/v1474454347/DSC02082-e1427549825463-1024x642_d2yfp2.jpg');">
-  <div class="our-services">
+  	<div class="our-services">
   	<h3 class="text-center">OUR SERVICES</h3>
-    <div class="row services-row">
-    	<% if @service_paragraphs %>
-			<% @service_paragraphs.each_with_index do |service_paragraphs, index| %>
-		    	<div class="col-xs-1 col-sm-1 col-md-1">
-					<div class="our-services-icon larger-icon">
-			    		<% if index == 0 %>
-		    				<i class="fa fa-child"></i>
-		              	<% elsif index == 1 %>
-		                	<i class="fa fa-film"></i>
-		                <% elsif index == 2 %>
-		                	<i class="fa fa-briefcase"></i>
-		                <% elsif index == 3 %>
-		                	<i class="fa fa-map-marker"></i>
-		                <% elsif index == 4 %>
-		                	<i class="fa fa-plane"></i>
-		              	<% else %>
-		               		<i class="fa fa-calendar"></i>
-		            	<% end %>
+	    <div class="row services-row">
+	    	<% if @service_paragraphs %>
+				<% @service_paragraphs.each_with_index do |service_paragraphs, index| %>
+			    	<div class="col-xs-1 col-sm-1 col-md-1">
+						<div class="our-services-icon larger-icon">
+				    		<% if index == 0 %>
+			    				<i class="fa fa-child"></i>
+			              	<% elsif index == 1 %>
+			                	<i class="fa fa-film"></i>
+			                <% elsif index == 2 %>
+			                	<i class="fa fa-briefcase"></i>
+			                <% elsif index == 3 %>
+			                	<i class="fa fa-map-marker"></i>
+			                <% elsif index == 4 %>
+			                	<i class="fa fa-plane"></i>
+			              	<% else %>
+			               		<i class="fa fa-calendar"></i>
+			            	<% end %>
+						</div>
 					</div>
-				</div>
-		    	<div class="col-xs-11 col-md-3 services-mobile-padding">
-		    		<h4><%= service_paragraphs.title %></h4>
-		    		<p><%= service_paragraphs.content %></p>
-		    	</div>
-			<% end %>
-	    <% end %>
+			    	<div class="col-xs-11 col-md-3 services-mobile-padding">
+			    		<h4><%= service_paragraphs.title %></h4>
+			    		<p><%= service_paragraphs.content %></p>
+			    	</div>
+				<% end %>
+		    <% end %>
+		</div>
 	</div>
-</div>
 </div>
 
 <!-- Fourth section - Our Team -->
@@ -156,11 +156,12 @@
 					<%= link_to jobapps_path do %>
 		    			<%= image_tag("http://res.cloudinary.com/ddota4fci/image/upload/v1475150361/wpllto3wkkch8ri4gwzz.png", id: "q-mark") %>
 		    		<% end %>
-		    	<div id="apply-now">
-		    		<%= link_to jobapps_path do %>
-				    	<h3>WORK WITH US</h3>
-			    		<p>Apply to join the Bea & Co team</p>
-		    		<% end %>
+			    	<div id="apply-now">
+			    		<%= link_to jobapps_path do %>
+					    	<h3>WORK WITH US</h3>
+				    		<p>Apply to join the Bea & Co team</p>
+			    		<% end %>
+			    	</div>
 		    	</div>
 	  		</div>
 			<div class="team-member">
@@ -168,7 +169,6 @@
 				<p>CAN ANY OF OUR TEAM RECOMMEND YOU?</p>
 			</div>
 		</div>
-	</div>
 	<% end %>
 </div>
 
